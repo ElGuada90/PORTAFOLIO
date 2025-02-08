@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Portafolio</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/Logo G.png') }}" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/homepage.css" type="text/css">
+    <script src="../static/js/generador.js"></script>
+  </head>
+
+  <body>
+    <!--Barra de Navegación-->
+
+    <ul class="topnav">
+      <li><img src="../static/images/Logo G.png" width="45" height="45" class="img-topnav"></li>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Abaut Us</a>
+        <div class="dropdown-content">
+          <a target="_blank" href="https://github.com/ElGuada90">GitHub</a>
+          <a href="#tutorial">Tutorial</a>
+          <a href="#Webchat">WebChat</a>
+        </div>
+      </li>
+    </ul>
+
+    <!--contenedor de la imagen del encabezamiento de la página-->
+    <div class="header">
+
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+      <div class="side">
+        <h2 class="side">About Me</h2>
+        <div class="card generador_password">
+          <h5>Password Generator:</h5>
+          <form  id="password-form">
+            <input class="generador_password" type="password" id="password" name="password" placeholder="Generated Password" readonly autocomplete="new-password">
+            <button onclick="copyPassword()">Copy</button>
+            <input type="range" min="4" max="30" value="12" id="password-length" class="range-slider">
+            <span id="password-length-display">12</span>
+            <br>
+            <label class="formuilario"><input type="checkbox" id="uppercase" title="Mayusculas"> Uppercase</label>
+            <label><input type="checkbox" id="lowercase" title="Minusculas"> Lowercase</label>
+            <label><input type="checkbox" id="numbers" title="Números" checked> Numbers</label>
+            <label><input type="checkbox" id="symbols" title="Simbolos"> Symbols</label>
+            <br>
+            <input class="formulario"type="button" value="Generate" id="generate-btn" class="btn btn-primary mt-3">
+          </form>
+        </div>
+        <!-- Descripcion de la aplicacion -->
+        <div class="card">
+          <p style="text-align: left; font-family: verdana; font-size: 14px;">
+            El generador de contraseñas, selecciona aleatoriamente caracteres de letras en mayusculas o minusculas,
+            números y simbolos.<br> La aplicacion inicia con un rango de 12 caracteres predeterminados y brinda la opción
+            de escoger un rango de longitud mínima de 4 caracteres, hasta un máximo de 30 caracteres. logrando una
+            eficiencia de seguridad para una contraseña robusta e infalible, que puede copiarse como datos para una
+            tabla de base de datos..
+          </p>
+        </div>
+        <h3 class="side">Learn Moore Web Apps..</h3>
+        <div id="tutorial">
+            <video width="340" height="160" controls autoplay loop>
+                <source src="../static/videos/App Consultas Center.mp4">
+            </video>
+        </div>
+        <h3 class="side">Ambiental Audio</h3>
+        <p class="side">Coldplay - Clocks.mp3</p>
+        <audio controls autoplay loop>
+          <source src="../static/music/Coldplay - Clocks Instrumental.mp3">
+        </audio><br>
+        <!--formulario para solicitar información-->
+        <div id="Webchat" class="card-formulario">
+          <a target="_blank" href="https://6flwbn5b-3000.use2.devtunnels.ms/"><img src="../static/images/ElGuada WebChat2.jpg" class="img-fluid WebChat"></a>
+        </div>
+      </div>
+
+      <!--Columna Derecha-->
+      <div class="main">
+        <h2 class="main">My Apps..</h2>
+        <div class="card super_movies">
+          <a target="_blank" href="https://6flwbn5b-5000.use2.devtunnels.ms/"><img src="../static/images/Logo Super Movies.png" class="img-fluid logos"></a>
+          <p>Multiplataforma stream movies videoteca..</p>
+        </div>
+        <div class="card tv_online">
+          <video width="340" height="160" controls autoplay loop>
+            <source src="../static/videos/App Consultas Center.mp4">
+          </video>
+          <p>Prototipo 1 online..</p>
+        </div>
+        <div class="card series">
+          <video width="340" height="160" controls autoplay loop>
+            <source src="../static/videos/App Consultas Center.mp4">
+          </video>
+          <p>Prototipo 2 online..</p>
+        </div>
+
+        <p class="side" style="text-align: left; font-family: verdana; font-size: 14px;">
+          Herramientas tecnologicas utilizadas, visual studio code, html, CSS, javascript, flask, python, bootstrap, sqlite..
+        </p>
+        <p style="font-family: verdana;">
+          Para el desarrollo de las web app progresiva, utilice las herramientas informaticas para la
+          construción de la interface grafica o front end, la cual será la presentacion de tus proyectos..
+          <br>
+          Como punto de inicio debes tener presente que para compilar todos estos datos,
+          vas a necesitar un editor de código y para esto recomiendo visual studio code.
+          Tambien vas a necesitar habilitar las extensiones para instalar las herramientas
+          que te sugiero en el gallery..
+        </p>
+
+        <!--Header title-->
+        <h2 class="main" style="text-align: center;">FRONTEND PROGRESIVE WEB APP</h2>
+        <!-- Galeria de iconos con link -->
+        <div class="container">
+          <div class="row">
+            <div class="gallery">
+              <a target="_blank" href="https://code.visualstudio.com/">
+                <img src="../static/images/Logo Visual Studio Code.png" alt="Mountains" width="50" height="50" class="img-fluid vsc">
+              </a>
+              <div class="desc">Editor de codigo VSCode</div>
+            </div>
+
+            <div class="gallery">
+              <a target="_blank" href="https://lenguajehtml.com/html/introduccion/que-es-html/">
+                <img src="../static/images/Logo html5.png" alt="Cinque Terre" width="50" height="50" class="img-fluid html">
+              </a>
+              <div class="desc">Html5 Estructura del proyecto</div>
+            </div>
+
+            <div class="gallery">
+              <a target="_blank" href="https://www.w3schools.com/css/default.asp">
+                <img src="../static/images/Logo css.png" alt="Forest" width="50" height="50" class="img-fluid css">
+              </a>
+              <div class="desc">CSS3 Estilos y Atributos</div>
+            </div>
+
+            <div class="gallery">
+              <a target="_blank" href="https://tutorialesprogramacionya.com/javascriptya/">
+                <img src="../static/images/Logo javascript.png" alt="Northern Lights" width="50" height="50" class="img-fluid javascript">
+              </a>
+              <div class="desc">Javascript Logica e interactividad</div>
+            </div>
+          </div>
+        </div>
+
+        <!--Galeria de links BACKEND-->
+        <h2 class="side">BACKEND LOGICA / CONECTIVIDAD</h2>
+        <div class="container">
+          <div class="row">
+            <div class="gallery">
+              <a target="_blank" href="https://www.mysql.com/downloads/">
+                <img src="../static/images/Logo MySQL.png" alt="Northern Lights" width="50" height="50" class="img-fluid">
+              </a>
+              <div class="desc">SQL MySQL SQLite Base de datos</div>
+            </div>
+
+            <div class="gallery">
+              <a target="_blank" href="https://www.python.org/downloads/">
+                <img src="../static/images/Logo Python.png" alt="Northern Lights" width="50" height="50" class="img-fluid">
+              </a>
+              <div class="desc">Python Logica e interactividad</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="https://customtkinter.tomschimansky.com/">
+                  <img src="../static/images/Logo Custom Tkinter.png" alt="Northern Lights" width="50" height="50" class="img-fluid">
+                </a>
+                <div class="desc">Interfaz Grafica Moderna de TKinter</div>
+              </div>
+
+            <div class="gallery">
+              <a target="_blank" href="https://flask.palletsprojects.com/en/3.0.x/tutorial/layout/">
+                <img src="../static/images/Logo Flask.png" alt="Northern Lights" width="50" height="50" class="img-fluid">
+              </a>
+              <div class="desc">Flask Framework Server API</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Pie de página-->
+    <div class="footer">
+      <div class="clearfix">
+        <a href="#"><img src="../static/images/Logo G.png" class="img-fluid img_footer-custom"></a>
+        <p>app Super Movies.<br>
+           app Tv Online.<br>
+           app Series.<br>
+           app ElGuada WebChat.<br>
+           app Generador de Contraseñas.<br>
+           e-mail: guadamuz1977@gmail.com <br>
+           Copyright &copy; 2024 PWA Aplication</p>
+      </div>
+    </div>
+
+</body>
+</html>
