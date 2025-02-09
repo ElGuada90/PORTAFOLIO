@@ -115,6 +115,10 @@ li.dropdown {
     flex-wrap: wrap;
 }
 
+.row-range {
+    text-align: center;
+}
+
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
@@ -260,6 +264,16 @@ audio {
 }
 
 .WebChat:hover {
+    transform: scale(1.05); /* Cambia el tamaño de la imagen al hacer hover */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+
+}
+
+.settings-logo {
+    width: 50%;
+}
+
+.settings-logo:hover {
     transform: scale(1.05); /* Cambia el tamaño de la imagen al hacer hover */
     transition: transform 0.3s ease; /* Agrega una transición suave */
 

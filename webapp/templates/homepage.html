@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Portafolio</title>
-    <link rel="icon" href="{{ url_for('static', filename='images/Logo G.png') }}" type="image/png">
+    <link rel="icon" href="{{ url_for('static', filename='images/icon G2.png') }}" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
     <!--Barra de Navegación-->
 
     <ul class="topnav">
-      <li><img src="../static/images/Logo G.png" width="45" height="45" class="img-topnav"></li>
+      <li><img src="../static/images/icon G2.png" width="45" height="45" class="img-topnav"></li>
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="#news">News</a></li>
       <li class="dropdown">
@@ -37,20 +37,22 @@
     <!-- The flexible grid (content) -->
     <div class="row">
       <div class="side">
-        <h2 class="side">About Me</h2>
+        <h2 class="side">My Apps..</h2>
         <div class="card generador_password">
           <h5>Password Generator:</h5>
           <form  id="password-form">
             <input class="generador_password" type="password" id="password" name="password" placeholder="Generated Password" readonly autocomplete="new-password">
-            <button onclick="copyPassword()">Copy</button>
+            <div class="row-range">
             <input type="range" min="4" max="30" value="12" id="password-length" class="range-slider">
             <span id="password-length-display">12</span>
+            </div>
             <br>
             <label class="formuilario"><input type="checkbox" id="uppercase" title="Mayusculas"> Uppercase</label>
             <label><input type="checkbox" id="lowercase" title="Minusculas"> Lowercase</label>
             <label><input type="checkbox" id="numbers" title="Números" checked> Numbers</label>
             <label><input type="checkbox" id="symbols" title="Simbolos"> Symbols</label>
             <br>
+            <button onclick="copyPassword()">Copy</button>
             <input class="formulario"type="button" value="Generate" id="generate-btn" class="btn btn-primary mt-3">
           </form>
         </div>
@@ -71,22 +73,28 @@
             </video>
         </div>
         <h3 class="side">Ambiental Audio</h3>
-        <p class="side">Coldplay - Clocks.mp3</p>
+        <p class="side">Instrumental Music.mp3</p>
         <audio controls autoplay loop>
           <source src="../static/music/Coldplay - Clocks Instrumental.mp3">
         </audio><br>
         <!--formulario para solicitar información-->
         <div id="Webchat" class="card-formulario">
-          <a target="_blank" href="https://6flwbn5b-3000.use2.devtunnels.ms/"><img src="../static/images/ElGuada WebChat2.jpg" class="img-fluid WebChat"></a>
+          <a target="_blank" href="https://6flwbn5b-3000.use2.devtunnels.ms/"><img src="../static/images/Web Chat.jpg" class="img-fluid WebChat"></a>
+        </div>
+        <div class="card-formulario">
+          <a target="_blank" href="https://6flwbn5b-1990.use2.devtunnels.ms/"><img src="../static/images/Logo Super Movies.png" class="img-fluid WebChat"></a>
+        </div>
+        <div class="card-formulario">
+          <a target="_blank" href="https://6flwbn5b-2000.use2.devtunnels.ms/"><img src="../static/images/settings_account_box.png" class="img-fluid settings-logo"></a>
         </div>
       </div>
 
       <!--Columna Derecha-->
       <div class="main">
-        <h2 class="main">My Apps..</h2>
+        <h2 class="main">Tutorials..</h2>
         <div class="card super_movies">
-          <a target="_blank" href="https://6flwbn5b-5000.use2.devtunnels.ms/"><img src="../static/images/Logo Super Movies.png" class="img-fluid logos"></a>
-          <p>Multiplataforma stream movies videoteca..</p>
+          <a target="_blank" href="https://6flwbn5b-5000.use2.devtunnels.ms/"><img src="#" class="img-fluid logos"></a>
+          <p>Plataforma para desarrollo de aplicaciones.</p>
         </div>
         <div class="card tv_online">
           <video width="340" height="160" controls autoplay loop>
